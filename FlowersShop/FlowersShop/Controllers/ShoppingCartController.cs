@@ -99,6 +99,7 @@ namespace FlowersShop.Controllers
                     Price = item.Product.Price
                 };
                 _mde.OrdersDetails.Add(detail);
+
                 _mde.SaveChanges();
             }
             Session.Remove("cart");
